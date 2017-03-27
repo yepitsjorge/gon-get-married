@@ -1,32 +1,12 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-    <title>Wedding Time</title>
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <script src="assets/js/ie-emulation-modes-warning.js"></script>
-    <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
+    {% include page_head.html %}
   </head>
   <body>
-    <!-- Alert for work in progress -->
-    <div class="container-fluid">
-      <div class="col-md-12">
-        <div class="alert alert-info" role="alert">
-          <span class="glyphicon glyphicon-exclamation-sign"></span><h3 class="text-left">This page is still under construction and many of the links and features are not working at the moment.
-          If you have any questions please contact Jorge at <b>(954) 913-3980</b>. Thanks!</h3>
-        </div>
-      </div>
-    </div>
     {% include navbar.html %}
 
     {% include carousel.html %}
@@ -63,7 +43,7 @@
           <p><a class="btn btn-default" href="#" role="button">Please, teach me &raquo;</a></p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="img/travel.png">
+          <img class="featurette-image img-responsive center-block" src="img/travel.png" width="500" height="500">
         </div>
       </div>
 
@@ -76,8 +56,9 @@
           <p><a class="btn btn-default" href="#" role="button">Here, take this link! &raquo;</a></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
+          <br>
           <!-- <img class="featurette-image img-responsive center-block" src="http://gph.is/1reY7S2"> -->
-          <iframe src="//giphy.com/embed/xT1XGWbE0XiBDX2T8Q" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+          <iframe src="//giphy.com/embed/xT1XGWbE0XiBDX2T8Q"></iframe>
         </div>
       </div>
 
@@ -85,14 +66,29 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">I'm so excited! <span class="text-muted">What's next?</span></h2>
+          <p class="lead">I'm glad you asked. Please <del>double</del> triple check that you've completed the following checklist.
+            <ul>
+              <li>My passport is up-to-date</li>
+              <li>I booked my flights to <mark>SJO</mark> airport by <b>May 31st</b>.</li>
+              <li>I made sure to RSVP.</li>
+              <li>I decided whether or not to join Jorge and Anna on a week of adventures and shenanigans</li>
+            </ul>
+            If you've done all of the above, enjoy this gif as your reward
+          </p>
+          <p>
+            <a id="custom_pop" class="btn btn-default" data-toggle="popover" data-placement="above" title="Good job!" data-trigger="focus">
+            Oooooh I wonder what this leads to... &raquo;
+            </a>
+          </p>
+          <!-- <div id="popover_content_wrapper">
+            <iframe src="//giphy.com/embed/gLMyrDo73F5Xq" width="480" height="360" frameBorder="0"></iframe>
+          </div> -->
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="img/passport.jpg">
         </div>
       </div>
-
       <hr class="featurette-divider">
       <!-- /END THE FEATURETTES -->
       <!-- FOOTER -->
@@ -103,17 +99,7 @@
       </footer>
 
     </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="assets/js/vendor/holder.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js/overlay.js"></script>
+    <!-- Bootstrap Core Javascript -->
+    {% include page_footer.html %}
   </body>
 </html>
