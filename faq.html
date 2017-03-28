@@ -8,7 +8,81 @@
   </head>
   <body>
     {% include navbar.html %}
-    FAQ Placeholder
+    <div class="row">
+    </div>
+    <div class="container body-fixed">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <!-- Question 1 -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="question1">
+            <h4 class="panel-title text-left">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#answer1" aria-expanded="false" aria-controls="answer1">
+                <span class="badge"><span class="glyphicon glyphicon-plus"></span></span> I didn't read the invitation, when is your wedding?
+              </a>
+            </h4>
+          </div>
+          <div id="answer1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="question1">
+            <div class="panel-body text-left">
+              A wonderful question illustrating the importance of reading! Our wedding is on <b>November 11th, 2017</b>.
+            </div>
+          </div>
+        </div>
+        <!-- Question 2 -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="question2">
+            <h4 class="panel-title text-left">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#answer2" aria-expanded="false" aria-controls="answer2">
+                <span class="badge"><span class="glyphicon glyphicon-plus"></span></span> How many days do I need to be in Costa Rica?
+              </a>
+            </h4>
+          </div>
+          <div id="answer2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="question2">
+            <div class="panel-body text-left">
+              Due to the location of our wedding and the time it would take to arrive at the venue from SJO,
+              we advise our guests to arrive by November 10th. Your return flight can be as early as Sunday,
+              November 12th or you could choose to join the considerable number of expats living in Costa
+              Rica. I'll leave the return part up to you!
+            </div>
+          </div>
+        </div>
+        <!-- Question 3 -->
+        <div class="panel panel-default text-left">
+          <div class="panel-heading" role="tab" id="question3">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#answer3" aria-expanded="false" aria-controls="answer3">
+                <span class="badge"><span class="glyphicon glyphicon-plus"></span></span> What do I need to bring with me?
+              </a>
+            </h4>
+          </div>
+          <div id="answer3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="question3">
+            <div class="panel-body text-left">
+              Below is a list of items we strongly recommend you bring with you:
+              <ul>
+                <li>Formal dress clothes</li>
+                <li>Sunscreen</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Question 4 -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="question4">
+            <h4 class="panel-title text-left">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#answer4" aria-expanded="false" aria-controls="answer4">
+                <span class="badge"><span class="glyphicon glyphicon-plus"></span></span> Do I need to exchange dollars for the local currency? Also, what is the local currency?
+              </a>
+            </h4>
+          </div>
+          <div id="answer4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="question4">
+            <div class="panel-body text-left">
+              The local currency is the colón. My recommendation would be to bring a credit card with no foreign currency fees.
+              Most places readily accept credit cards but feel free to exchange some USD to Costa Rican colónes if you also prefer
+              to have some cash on hand.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     {% include page_footer.html %}
   </body>
 

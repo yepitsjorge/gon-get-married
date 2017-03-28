@@ -8,7 +8,76 @@
   </head>
   <body>
     {% include navbar.html %}
-    Guest List Placeholder
+    <div class="row">
+    </div>
+    <div class="container body-fixed">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="alert alert-info" role="alert">
+            <div class="row">
+              <div class="col-md-10">
+                <p class="text-left">Check to see if your name has been added to the <b>Currently Confirmed Guests</b> list below.
+                If you don't see your name there, click on the button to the right to make changes to your RSVP.</p>
+              </div>
+              <div class="col-md-2">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsible" aria-expanded="false" aria-controls="collapsible">
+            Make Changes
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <br>
+      </div>
+      <!-- Collapsible Embedded Div for Google Form RSVP Changes -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="collapse" id="collapsible">
+            Peekaboo! Add embedded Google Form here!
+          </div>
+        </div>
+      </div>
+
+      <!-- Div for the current guest list -->
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h4 class="text-center">Guest List</h4>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-4">
+            <div class="panel panel-success">
+              <div class="panel-heading"><h5 class="text-center">I'll be there!</h5></div>
+              <div class="panel-body">
+                <ul class="text-left">
+                  <li>Russell Peterson</li>
+                  <li>Zahrah Khan</li>
+                  <li>Sana Khan</li>
+                  <li>Phil Hillman</li>
+                  <li>Kyle Stone</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-danger">
+              <div class="panel-heading"><h5 class="text-center">Sorry, parties in tropical countries aren't my style</h5></div>
+              <div class="panel-body"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-warning">
+              <div class="panel-heading"><h5 class="text-center">I take forever to make decisions</h5></div>
+              <div class="panel-body"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     {% include page_footer.html %}
   </body>
 
