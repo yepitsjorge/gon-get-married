@@ -12,7 +12,7 @@
     </div>
     <div class="container body-fixed">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 col-md-offset-3">
           <div class="alert alert-info" role="alert">
             <div class="row">
               <div class="col-md-10">
@@ -25,7 +25,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-1">
           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsible" aria-expanded="false" aria-controls="collapsible">
             Make Changes
           </button>
@@ -38,45 +38,48 @@
       <div class="row">
         <div class="col-md-12">
           <div class="collapse" id="collapsible">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeSr8v3GJHcQdaIxRj0-ursHd-zLcWsNUWzsWYp2DVtS6UNbA/viewform?embedded=true" width="100%" height="75%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeSr8v3GJHcQdaIxRj0-ursHd-zLcWsNUWzsWYp2DVtS6UNbA/viewform?embedded=true" width="100%" height="500px" frameborder="0" marginheight="0" marginwidth="0"></iframe>
           </div>
         </div>
       </div>
 
       <!-- Div for the current guest list -->
-      <div class="panel panel-info">
-        <div class="panel-heading">
-          <h4 class="text-center">Guest List</h4>
-        </div>
-        <div class="panel-body">
-          <div class="col-md-4">
-            <div class="panel panel-success">
-              <div class="panel-heading"><h5 class="text-center">I'll be there!</h5></div>
-              <div class="panel-body">
-                <ul class="text-left">
-                  <li>Russell Peterson</li>
-                  <li>Zahrah Khan</li>
-                  <li>Sana Khan</li>
-                  <li>Phil Hillman</li>
-                  <li>Kyle Stone</li>
-                </ul>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h4 class="text-center">Guest List</h4>
+          </div>
+          <div class="panel-body">
+            <div class="col-md-4">
+              <div class="panel panel-success">
+                <div class="panel-heading"><h5 class="text-center">I'll be there!</h5></div>
+                <div class="panel-body">
+                  <ul class="text-left">
+                    <li>Russell Peterson</li>
+                    <li>Zahrah Khan</li>
+                    <li>Sana Khan</li>
+                    <li>Phil Hillman</li>
+                    <li>Kyle Stone</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="panel panel-danger">
-              <div class="panel-heading"><h5 class="text-center">Sorry, parties in tropical countries aren't my style</h5></div>
-              <div class="panel-body"></div>
+            <div class="col-md-4">
+              <div class="panel panel-danger">
+                <div class="panel-heading"><h5 class="text-center">Sorry, parties in tropical countries aren't my style</h5></div>
+                <div class="panel-body"></div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="panel panel-warning">
-              <div class="panel-heading"><h5 class="text-center">I take forever to make decisions</h5></div>
-              <div class="panel-body"></div>
+            <div class="col-md-4">
+              <div class="panel panel-warning">
+                <div class="panel-heading"><h5 class="text-center">I take forever to make decisions</h5></div>
+                <div class="panel-body"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
     {% include page_footer.html %}
   </body>
