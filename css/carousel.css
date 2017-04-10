@@ -77,8 +77,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  height: auto;
+  /*min-width: 100%;
+  height: auto;*/
   background-size: cover;
   background-position: center;
 }
@@ -166,6 +166,11 @@ body {
   .featurette-heading {
     font-size: 50px;
   }
+
+  .carousel-inner > .item > img {
+    max-height: 500px;
+    width: auto;
+  }
 }
 
 @media (min-width: 992px) {
@@ -184,4 +189,23 @@ body {
   .full-cover {
     left: 2%;
     right: 2%;
+  }
+
+  @media (min-width: 1200px) {
+    .carousel {
+      height: 750px;
+      margin-bottom: 60px;
+    }
+
+    .carousel .item {
+      height: 750px;
+      background-color: #777;
+      background-size: contain;
+    }
+
+    .carousel-inner > .item > img {
+      height: 1000px;
+      width: auto;
+      background-size: cover;
+    }
   }
