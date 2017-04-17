@@ -6,9 +6,104 @@
   <head>
     {% include page_head.html %}
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#verticalNav">
     {% include navbar.html %}
-    Discover CR placeholder
+
+    <div id="home" class="container body-fixed">
+      <div class="col-md-11">
+        <div id="top" class="row">
+          <div class="well">
+            <div class="row">
+              <div class="col-md-8">
+                <h2 class="text-left">This is San Ramon, Costa Rica</h2>
+                <p class="text-justify">
+                  The resort we'll all be staying at is called Villa Blanca and it's located just above San Ramon at the top of the
+                  Los Angeles Private Cloud Forest Reserve. Please check out the items below for more detailed information.
+                </p>
+              </div>
+              <div class="col-md-4">
+                <img class="featurette-image img-responsive center-block" src="img/san_ramon_map.png" width="90%" height="90%">
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="featurette-divider">
+        <div id="resort" class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Welcome to Villa Blanca! </h2><h4><span class="text-muted">A place that's (many times literally) in the clouds.</span></h4>
+            <p class="lead text-justify">When you arrive on November 10th we'll be picking you up from San Jose airport and heading over to San Ramon. From San Ramon
+              we'll be driving up a small road into the mountains to the top of Cloud Forest where we'll arrive at the secluded Villa Blanca. The resort
+              was originally owned by former Costa Rican president Rodrigo Carazo Odio who converted the property into his vision for the new national
+              parks program.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" src="img/villa_blanca_front.jpeg" width="90%" height="90%">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <div id="menu" class="row featurette">
+          <div class="col-md-7 col-md-push-5">
+            <h2 class="featurette-heading">The RSVP card said only "Chicken" or "Seafood". </h2><h4><span class="text-muted">What's actually on the menu?</span></h4>
+            <p class="lead">For dinner you'll have your choice of the following entrees:
+              <ul><li>Grilled chicken in a three cheese sauce (gorgonzola, mozzarella, Turrialba)</li>
+              <li>Fish of the day with shrimp in a seafood sauce</li>
+              </ul>
+              Each entree comes with 2 sides:
+              <ul><li>Yuca al mojo: Yuca marinated in garlic, lime, and olive oil</li>
+                <li>Julienne style vegetables: Thinly sliced, lightly salted veggies</li>
+              </ul>
+            </p>
+          </div>
+          <div class="col-md-5 col-md-pull-7">
+            <img class="featurette-image img-responsive center-block" src="img/villa_blanca_food.jpg" width="90%" height="90%">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <div id="rooms" class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">In case you're wondering about your accomodations: </h2><h4><span class="text-muted">Here are the specifics.</span></h4>
+            <p class="lead text-justify">We've already reserved cabins for each party. In order to have the proper number of cabins available please send back your
+              RSVP as soon as possible. If you'd like to room with somebody or upgrade your cabin (you big spender) let me know and I'd be happy to help.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" src="img/villa_blanca_casita.jpg" width="90%" height="90%">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <div id="location" class="row featurette">
+          <div class="col-md-4 col-md-push-8">
+            <h2 class="featurette-heading">So where exactly is this place? </h2><h4><span class="text-muted">I'll let Google show you the way.</span></h4>
+            <p class="lead"></p>
+          </div>
+          <div class="col-md-8 col-md-pull-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111429.40462917164!2d-84.52257464699281!3d10.13289024831534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa043329c071143%3A0x434e23c7b415edc4!2sVilla+Blanca+Cloud+Forest+Resort+and+Nature+Reserve!5e0!3m2!1sen!2sus!4v1492450876678" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <!-- /END THE FEATURETTES -->
+        <!-- FOOTER -->
+        <footer>
+          <p class="pull-right"><a href="#home">Back to top</a></p>
+          <p>November 11th, 2017</p>
+        </footer>
+
+      </div>
+      <div id="verticalNav" class="col-md-1">
+        <ul class="nav nav-pills nav-stacked fixed">
+          <li role="presentation" class="active"><a href="#home">Home</a></li>
+          <li role="presentation"><a href="#resort">The Resort</a></li>
+          <li role="presentation"><a href="#menu">Menu</a></li>
+          <li role="presentation"><a href="#rooms">Rooms</a></li>
+          <li role="presentation"><a href="#location">Location</a></li>
+        </ul>
+      </div>
+
+    </div>
+
     {% include page_footer.html %}
   </body>
 
